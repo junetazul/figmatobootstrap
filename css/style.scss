@@ -1,0 +1,90 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --ff-first: 'Poppins', sans-serif;
+    --ff-second: 'Roboto', sans-serif;
+    --ff-third: 'Inter', sans-serif;
+    --ff-four:  'Manrope', sans-serif;
+
+    --fw-one: 700;
+    --fw-two: 600;
+    --fw-three: 500;
+    --fw-four: 400;
+    --fw-three: 300;
+
+
+    --fs-one: 22px;
+    --fs-second: 16px;
+    --fs-third: 48px;
+    --fs-fourth: 38px;
+    --fs-fifth: 36px;
+    --fs-sixth: 28px;
+    --fs-seventh: 15px;
+    --fs-eight: 20px;
+    --fs-nine: 14px;
+    --fs-ten: 18px;
+
+
+    --lh-one:33px;
+    --lh-second: 24px;
+
+
+
+    --clr-first: #3E3E3E;
+    --clr-second:#FFFFFF;
+    --clr-third: #0A0826;
+    --clr-fourth:#3F87F5;
+    --clr-footer:#0B0D17;
+    --clr-hot: #FF4E4E;
+    --clr-bg:#E5E5E5
+
+}
+
+body{
+    background-color: var(--clr-bg);
+}
+
+html{
+    ::-webkit-scrollbar{
+        width: 0;
+        display: none;
+    }
+    ::-webkit-scrollbar-thumb{
+        display: none;
+    }
+
+    overflow-x: hidden;
+}
+
+// Navbar Starts
+.navbar{
+    background-color: var(--clr-bg);
+    // height: 106px;
+    padding-top: 40px;
+    padding-bottom: 33px;
+}
+
+.navbar-brand{
+    font-family: var(--ff-first);
+    font-weight: var(--fw-one);
+    font-size: var(--fs-one);
+    line-height: var(--lh-one);
+    color: var(--clr-first);
+
+}
+.nav-item a{
+    font-family: var(--ff-first);
+    font-size: var(--fs-second);
+    font-weight: var(--fw-three);
+    line-height: var(--lh-second);
+    color:var(--clr-first) ;
+}
+
+//Navbar ends
