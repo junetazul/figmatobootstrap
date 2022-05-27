@@ -5,6 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    ::-webkit-scrollbar{
+        width: 0;
+        display: none;
+    }
+    ::-webkit-scrollbar-thumb{
+        display: none;
+    }
+
+    overflow-x: hidden;
+}
 
 :root{
 
@@ -44,7 +55,9 @@
     --clr-fourth:#3F87F5;
     --clr-footer:#0B0D17;
     --clr-hot: #FF4E4E;
-    --clr-bg:#E5E5E5
+    --clr-bg:#E5E5E5;
+
+    --mrg-below: 100px;
 
 }
 
@@ -52,17 +65,7 @@ body{
     background-color: var(--clr-bg);
 }
 
-html{
-    ::-webkit-scrollbar{
-        width: 0;
-        display: none;
-    }
-    ::-webkit-scrollbar-thumb{
-        display: none;
-    }
 
-    overflow-x: hidden;
-}
 
 // Navbar Starts
 .navbar{
@@ -97,3 +100,22 @@ html{
 }
 
 //Navbar ends
+.commonbottom{
+    margin-bottom: var(--mrg-below) ;
+}
+.firstdiv{
+    height: 584px;
+    background-image: url(../images/First.png);
+    background-position: center;
+}
+.seconddiv{
+    height: 584px;
+    background-image: url(../images/Second.png);
+    background-position: center;
+}
+.thirddiv{
+    height: 584px;
+    background-image: url(../images/Third.png);
+    background-position: center;
+
+}

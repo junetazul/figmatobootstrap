@@ -3,15 +3,25 @@
 ::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+html ::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+html ::-webkit-scrollbar-thumb {
+  display: none;
 }
 
 :root {
-  --ff-first: 'Poppins', sans-serif;
-  --ff-second: 'Roboto', sans-serif;
-  --ff-third: 'Inter', sans-serif;
-  --ff-four:  'Manrope', sans-serif;
+  --ff-first: "Poppins", sans-serif;
+  --ff-second: "Roboto", sans-serif;
+  --ff-third: "Inter", sans-serif;
+  --ff-four: "Manrope", sans-serif;
   --fw-one: 700;
   --fw-two: 600;
   --fw-three: 500;
@@ -36,26 +46,12 @@
   --clr-fourth:#3F87F5;
   --clr-footer:#0B0D17;
   --clr-hot: #FF4E4E;
-  --clr-bg:#E5E5E5
-
-;
+  --clr-bg:#E5E5E5;
+  --mrg-below: 100px;
 }
 
 body {
   background-color: var(--clr-bg);
-}
-
-html {
-  overflow-x: hidden;
-}
-
-html ::-webkit-scrollbar {
-  width: 0;
-  display: none;
-}
-
-html ::-webkit-scrollbar-thumb {
-  display: none;
 }
 
 .navbar {
@@ -86,4 +82,24 @@ html ::-webkit-scrollbar-thumb {
     line-height: var(--lh-third);
   }
 }
-/*# sourceMappingURL=style.css.map */
+.commonbottom {
+  margin-bottom: var(--mrg-below);
+}
+
+.firstdiv {
+  height: 584px;
+  background-image: url(../images/First.png);
+  background-position: center;
+}
+
+.seconddiv {
+  height: 584px;
+  background-image: url(../images/Second.png);
+  background-position: center;
+}
+
+.thirddiv {
+  height: 584px;
+  background-image: url(../images/Third.png);
+  background-position: center;
+}/*# sourceMappingURL=style.css.map */
