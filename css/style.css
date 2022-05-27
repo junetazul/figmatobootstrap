@@ -29,6 +29,7 @@
   --fs-ten: 18px;
   --lh-one:33px;
   --lh-second: 24px;
+  --lh-third: 21px;
   --clr-first: #3E3E3E;
   --clr-second:#FFFFFF;
   --clr-third: #0A0826;
@@ -77,5 +78,12 @@ html ::-webkit-scrollbar-thumb {
   font-weight: var(--fw-three);
   line-height: var(--lh-second);
   color: var(--clr-first);
+}
+
+@media (max-width: 360px) {
+  .navbar-brand {
+    font-size: var(--fs-nine);
+    line-height: var(--lh-third);
+  }
 }
 /*# sourceMappingURL=style.css.map */

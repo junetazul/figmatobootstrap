@@ -34,6 +34,7 @@
 
     --lh-one:33px;
     --lh-second: 24px;
+    --lh-third: 21px;
 
 
 
@@ -85,6 +86,14 @@ html{
     font-weight: var(--fw-three);
     line-height: var(--lh-second);
     color:var(--clr-first) ;
+}
+
+@media (max-width:360px){
+    .navbar-brand{
+        font-size: var(--fs-nine);
+        line-height: var(--lh-third);
+
+    }
 }
 
 //Navbar ends
