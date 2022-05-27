@@ -43,6 +43,7 @@ html ::-webkit-scrollbar-thumb {
   --lh-third: 21px;
   --lh-fourth: 57.84px;
   --lh-fifth:36px;
+  --lh-sixth: 28px;
   --clr-first: #3E3E3E;
   --clr-second:#FFFFFF;
   --clr-third: #0A0826;
@@ -53,15 +54,17 @@ html ::-webkit-scrollbar-thumb {
   --clr-gr: #073200;
   --clr-ye: #827742;
   --clr-or: #A33E06;
+  --clr-br: #D5E5FB;
+  --clr-btn: ##F496D1;
   --mrg-below: 100px;
 }
 
 body {
-  background-color: var(--clr-bg);
+  background-color: var(--clr-second);
 }
 
 .navbar {
-  background-color: var(--clr-bg);
+  background-color: var(--clr-second);
   padding-top: 40px;
   padding-bottom: 33px;
 }
@@ -190,26 +193,131 @@ body {
     margin-inline: auto;
   }
 }
+.gate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.gate .btnn {
+  width: 238px;
+  height: 44px;
+}
+
 .pricecard {
+  display: flex;
+  flex-direction: column;
+  padding-top: 42px;
   height: 387px;
   width: 232px;
-  background-color: green;
+  background-color: var(--clr-second);
+  border-radius: 20px;
+}
+.pricecard ul {
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: url(../images/list.png);
+}
+.pricecard button {
+  width: 207px;
+  height: 45px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgb(250, 240, 241);
+}
+.pricecard button a {
+  text-decoration: none;
 }
 
 .premiumcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: left;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-bottom: 30px;
   height: 480px;
   width: 292px;
-  background-color: aquamarine;
+  background-color: var(--clr-fourth);
+  border-radius: 20px;
+}
+.premiumcard button {
+  width: 207px;
+  height: 45px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgb(250, 240, 241);
+}
+.premiumcard button a {
+  text-decoration: none;
 }
 
 .clientcard {
   height: 323px;
   width: 360px;
-  background-color: aqua;
+  background-color: var(--clr-second);
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 2px 2px 20px rgb(236, 236, 236);
+  padding-top: 21px;
+}
+.clientcard p {
+  width: 252px;
+  margin-inline: auto;
+}
+.clientcard img {
+  padding: 10px;
+}
+
+.accordion-item {
+  background-color: var(--clr-second);
+  border: 1px solid var(--clr-br);
+}
+
+.accordion-button {
+  background-color: var(--clr-second);
+  border: 1px solid var(--clr-br);
 }
 
 .footer {
   height: 280px;
   background-color: var(--clr-footer);
   margin-top: 50px;
+}
+
+.buttonimage {
+  width: 133.26px;
+  height: 38.26px;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.getapp {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.getapp h6 {
+  margin-right: 34px;
+  color: var(--clr-second);
+  font-family: var(--ff-four);
+  font-size: var(--fs-ten);
+  font-weight: var(--fw-three);
+  line-height: var(--lh-sixth);
+}
+
+.copyright {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */
