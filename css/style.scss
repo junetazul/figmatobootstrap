@@ -227,6 +227,30 @@ body{
 
 }
 
+.pricecard {
+    height: 387px;
+    width: 232px;
+    background-color: green;
+  }
+  
+  .premiumcard {
+    height: 480px;
+    width: 292px;
+    background-color: aquamarine;
+  }
+  
+  .clientcard {
+    height: 323px;
+    width: 360px;
+    background-color: aqua;
+  }
+
+  .footer{
+      height: 280px;
+      background-color: var(--clr-footer);
+      margin-top: 50px;
+  }
+
 
 
 
