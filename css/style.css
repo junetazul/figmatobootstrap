@@ -44,6 +44,7 @@ html ::-webkit-scrollbar-thumb {
   --lh-fourth: 57.84px;
   --lh-fifth:36px;
   --lh-sixth: 28px;
+  --lh-sixty: 60px;
   --clr-first: #3E3E3E;
   --clr-second:#FFFFFF;
   --clr-third: #0A0826;
@@ -194,6 +195,7 @@ body {
   }
 }
 .gate {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,11 +205,68 @@ body {
   width: 238px;
   height: 44px;
 }
+.gate h2 {
+  font-family: var(--ff-first);
+  font-weight: var(--fw-one);
+  font-size: var(--fs-fourth);
+  line-height: var(--lh-sixty);
+}
+.gate p {
+  font-family: var(--ff-first);
+  font-weight: var(--fw-one);
+  font-size: 16px;
+  line-height: 24px;
+  color: #6C6C6C;
+}
+.gate button {
+  font-family: var(--ff-first);
+  font-weight: var(--fw-one);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--clr-second);
+}
+.gate .discount {
+  width: 263px;
+  height: 42px;
+  background-color: var(--clr-second);
+  border-left: 8px solid var(--clr-fourth);
+  box-shadow: 3px 3px 20px rgb(165, 160, 160);
+  padding: 10px;
+  padding-top: 10px;
+  position: absolute;
+  top: 40%;
+  right: 0px;
+}
+.gate .discount p {
+  font-size: 14px;
+  font-family: var(--ff-first);
+  font-weight: var(--fw-two);
+  line-height: 24px;
+}
+.gate .discount span i {
+  color: var(--clr-fourth);
+}
+.gate .discount .close {
+  position: absolute;
+  top: 0px;
+  right: 8px;
+}
+.gate .discount .close span i {
+  color: grey;
+}
+
+.devider h2 {
+  font-family: var(--ff-first);
+  font-weight: var(--fw-two);
+  font-size: 38px;
+  line-height: 57px;
+  color: #0A0826;
+}
 
 .pricecard {
   display: flex;
   flex-direction: column;
-  padding-top: 42px;
+  padding-top: 4px;
   height: 387px;
   width: 232px;
   background-color: var(--clr-second);
@@ -217,6 +276,20 @@ body {
   list-style-type: none;
   list-style-position: outside;
   list-style-image: url(../images/list.png);
+}
+.pricecard li {
+  color: #848199;
+  margin-bottom: 8px;
+  font-family: var(--ff-second);
+}
+.pricecard h4, .pricecard h5 {
+  color: #231D4F;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: var(--ff-second);
+}
+.pricecard p {
+  color: #848199;
 }
 .pricecard button {
   width: 207px;
@@ -228,16 +301,20 @@ body {
 }
 .pricecard button a {
   text-decoration: none;
+  color: var(--clr-fourth);
+  font-family: var(--ff-second);
+  font-weight: bold;
 }
 
 .premiumcard {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   justify-items: center;
   align-items: left;
   padding-top: 40px;
-  padding-left: 30px;
+  padding-left: 40px;
   padding-bottom: 30px;
   height: 480px;
   width: 292px;
@@ -254,6 +331,41 @@ body {
 }
 .premiumcard button a {
   text-decoration: none;
+  color: var(--clr-fourth);
+  font-family: var(--ff-second);
+  font-weight: bold;
+}
+.premiumcard ul {
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: url(../images/premium\ ul.png);
+}
+.premiumcard li {
+  color: var(--clr-second);
+  margin-bottom: 8px;
+}
+.premiumcard h4, .premiumcard h5, .premiumcard p {
+  color: var(--clr-second);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.premiumcard .hot {
+  height: 27px;
+  width: 46px;
+  background-color: #FF4E4E;
+  text-align: center;
+  border-radius: 15px;
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+.premiumcard .hot h6 {
+  font-family: var(--ff-second);
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: var(--clr-second);
+  margin-top: 5px;
 }
 
 .clientcard {
@@ -262,7 +374,7 @@ body {
   background-color: var(--clr-second);
   border-radius: 8px;
   text-align: center;
-  box-shadow: 2px 2px 20px rgb(236, 236, 236);
+  box-shadow: 3px 3px 20px rgb(226, 218, 218);
   padding-top: 21px;
 }
 .clientcard p {
@@ -271,6 +383,10 @@ body {
 }
 .clientcard img {
   padding: 10px;
+}
+.clientcard .clientname {
+  color: #0C1920;
+  font-weight: bold;
 }
 
 .accordion-item {
@@ -299,6 +415,7 @@ body {
 }
 
 .getapp {
+  background-color: var(--clr-footer);
   height: 280px;
   display: flex;
   flex-direction: column;
@@ -307,17 +424,19 @@ body {
 }
 .getapp h6 {
   margin-right: 34px;
-  color: var(--clr-second);
   font-family: var(--ff-four);
   font-size: var(--fs-ten);
   font-weight: var(--fw-three);
   line-height: var(--lh-sixth);
+  color: #D9DBE1;
 }
 
 .copyright {
+  background-color: var(--clr-footer);
   height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  color: #D9DBE1;
 }/*# sourceMappingURL=style.css.map */
